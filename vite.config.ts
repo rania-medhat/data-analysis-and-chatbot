@@ -54,7 +54,8 @@
     },
     build: {
       target: 'esnext',
-      outDir: 'build',
+      // Vercel expects `dist` by default. Use `dist` to match the platform's default output directory.
+      outDir: 'dist',
     },
     server: {
       port: 3333,
